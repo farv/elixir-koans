@@ -5,6 +5,17 @@
 Elixir koans is a fun way to get started with the elixir programming language. It is a tour
 of the most important features and idiomatic usage of the language.
 
+### Docker
+
+In order to use the instance as a Docker just execute the commands:
+
+```sh
+$ docker build -t elixir-koans .
+```
+```sh
+$ docker run --rm -v `pwd`:/elixir-koans -ti elixir-koans 
+```
+
 ### Prerequisites
 
 You need to have Elixir installed. Please refer to the [official guide](http://elixir-lang.org/install.html) for instructions.
