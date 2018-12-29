@@ -10,11 +10,11 @@ of the most important features and idiomatic usage of the language.
 In order to use the instance as a Docker just execute the commands:
 
 ```sh
-$ docker build -t elixir-koans .
+$ docker run -it --rm --volume $PWD:/elixir_koans/ elixir bash
 ```
-```sh
-$ docker run --rm -v `pwd`:/elixir-koans -ti elixir-koans 
-```
+
+To avoid network problems I have added *--network host*. Then I have follow the next steps.
+
 
 ### Prerequisites
 
